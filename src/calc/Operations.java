@@ -1,10 +1,30 @@
 package calc;
 
-import static calc.Main.correctConditionOfNumber;
 import static calc.RomeNumbersOperations.arabNumbersToRome;
 import static calc.RomeNumbersOperations.romeNumbersToArab;
 
+
+
 class Operations {
+
+    static byte correctConditionOfNumber(String[] numbers) throws Exception {
+        if ((romeNumbersToArab(numbers[0]) != -1) & (romeNumbersToArab(numbers[1]) != -1)) {
+            return 0;
+        } else {
+            if ((romeNumbersToArab(numbers[0]) == -1) | (romeNumbersToArab(numbers[1]) == -1)) {
+                throw new Exception("числа не удовлетворяют условию");
+            } else {
+                if ((Byte.parseByte(numbers[0]) >= 1) & (Byte.parseByte(numbers[0]) <= 10)
+                        & (Byte.parseByte(numbers[1]) >= 1) & (Byte.parseByte(numbers[1]) <= 10)) {
+                    return 1;
+                } else {
+                    throw new Exception("числа не удовлетворяют условию");
+                }
+            }
+        }
+    }
+
+
     static String addition(String[] input) throws Exception {
         int result = 0;
         if (correctConditionOfNumber(input) == 0) {
