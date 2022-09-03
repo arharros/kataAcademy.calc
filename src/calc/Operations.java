@@ -3,8 +3,6 @@ package calc;
 import static calc.RomeNumbersOperations.arabNumbersToRome;
 import static calc.RomeNumbersOperations.romeNumbersToArab;
 
-
-
 class Operations {
 
     static byte correctConditionOfNumber(String[] numbers) throws Exception {
@@ -23,7 +21,6 @@ class Operations {
             }
         }
     }
-
 
     static String addition(String[] input) throws Exception {
         int result = 0;

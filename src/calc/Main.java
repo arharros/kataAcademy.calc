@@ -1,11 +1,10 @@
 package calc;
 
 import java.util.Scanner;
-
 import static calc.Operations.*;
-import static calc.RomeNumbersOperations.romeNumbersToArab;
 
 public class Main {
+
     public static void main(String[] args) throws Exception {
         Scanner console = new Scanner(System.in);
         System.out.println("Введите арифметическое выражение арабскими(1,2,3..) или римскими цифрами(I,II,III,IV..)!");
@@ -42,7 +41,7 @@ public class Main {
                 switch (operator) {
                     case '+':
                         String[] numbers = input.split("\\+");
-                        if (numbers.length<2) {
+                        if (numbers.length < 2) {
                             throw new Exception("формат математической операции не удовлетворяет заданию");
                         } else {
                             result = addition(numbers);
@@ -50,7 +49,7 @@ public class Main {
                         break;
                     case '-':
                         numbers = input.split("-");
-                        if (numbers.length<2) {
+                        if (numbers.length < 2) {
                             throw new Exception("формат математической операции не удовлетворяет заданию");
                         } else {
                             result = subtraction(numbers);
@@ -58,7 +57,7 @@ public class Main {
                         break;
                     case '*':
                         numbers = input.split("\\*");
-                        if (numbers.length<2) {
+                        if (numbers.length < 2) {
                             throw new Exception("формат математической операции не удовлетворяет заданию");
                         } else {
                             result = multiplication(numbers);
@@ -66,7 +65,7 @@ public class Main {
                         break;
                     case '/':
                         numbers = input.split("/");
-                        if (numbers.length<2) {
+                        if (numbers.length < 2) {
                             throw new Exception("формат математической операции не удовлетворяет заданию");
                         } else {
                             result = division(numbers);

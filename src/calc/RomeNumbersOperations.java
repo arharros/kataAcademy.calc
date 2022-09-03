@@ -1,9 +1,9 @@
 package calc;
 
 class RomeNumbersOperations {
+
     static String[] romeNumbers = new String[]{"I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX", "X"};
     static String[] romeDecimalNumbers = new String[]{"XX", "XXX", "XL", "L", "LX", "LXX", "LXXX", "XC", "C"};
-
 
     static int romeNumbersToArab(String input) {
         int number = -1;
