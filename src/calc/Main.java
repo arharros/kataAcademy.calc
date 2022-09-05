@@ -1,7 +1,7 @@
 package calc;
 
 import java.util.Scanner;
-import static calc.Operations.*;
+import static calc.OperationsAndConditionsOfNumbers.*;
 
 public class Main {
 
